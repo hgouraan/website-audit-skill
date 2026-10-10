@@ -1,0 +1,14 @@
+version: '1'
+cases:
+  - id: happy-path
+    expect: synthetic fixture validates clean; all 6 seeded defects appear in findings
+  - id: missing-scope
+    expect: run without scope.md fails before any evidence work
+  - id: invented-evidence
+    expect: finding citing unknown evidence_id fails; HYPOTHESIS literal passes
+  - id: formula-drift
+    expect: priority_score not matching the formula fails
+  - id: ticket-gap
+    expect: finding without an implementation brief fails
+  - id: coverage-honesty
+    expect: coverage-limitations.md without a not-covered statement fails

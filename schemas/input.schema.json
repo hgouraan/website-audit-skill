@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "website-audit input",
+  "type": "object",
+  "required": ["site", "scope", "target_market", "primary_conversion_goal"],
+  "properties": {
+    "site": {"type": "string"},
+    "scope": {"type": "string"},
+    "target_market": {"type": "string"},
+    "primary_conversion_goal": {"type": "string"},
+    "mode": {"enum": ["live", "offline-artifact"]},
+    "crawl_limits": {"type": "object"}
+  },
+  "additionalProperties": true
+}

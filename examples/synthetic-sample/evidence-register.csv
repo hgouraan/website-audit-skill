@@ -1,0 +1,6 @@
+evidence_id,url,type,source_file,captured_at
+E1,/index.html,automated,site-export/index.html,2026-10-10
+E2,/menu.html,automated,site-export/menu.html,2026-10-10
+E3,/order.html,automated,site-export/order.html,2026-10-10
+E4,/contact.html,automated,site-export/contact.html,2026-10-10
+E5,/about.html,automated,site-export/about.html,2026-10-10

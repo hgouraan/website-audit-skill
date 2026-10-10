@@ -1,0 +1,11 @@
+flowchart TD
+ A[URL + scope + goals] --> B[Access and tool checks]
+ B --> C{Live evidence available?}
+ C -- Yes --> D[Bounded evidence collection]
+ C -- No --> E[Offline supplied-artifact audit]
+ D --> F[Six-layer analysis]
+ E --> F
+ F --> G[Evidence-linked findings]
+ G --> H[Severity + effort scoring]
+ H --> I[Prioritized implementation backlog]
+ I --> J[Coverage and QA report]

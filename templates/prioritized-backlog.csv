@@ -1,0 +1,7 @@
+rank,finding_id,priority_score,summary
+1,F-02,20.0,form input has no label
+2,F-03,20.0,page missing title and h1
+3,F-01,15.0,hero image missing alt attribute
+4,F-04,15.0,no meta description
+5,F-06,6.0,no analytics instrumentation on any page
+6,F-05,5.0,no confirmation or error state after submit

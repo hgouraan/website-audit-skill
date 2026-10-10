@@ -1,0 +1,7 @@
+finding_id,dimension,url,observation,evidence_id,impact,confidence,effort,reproduction,proposed_fix
+F-01,technical,/index.html,hero image missing alt attribute,E1,3,5,1,open site-export/index.html and inspect the img tag,add descriptive alt text to hero image
+F-02,technical,/order.html,form input has no label,E3,4,5,1,open site-export/order.html and inspect the form,associate a label with each input
+F-03,seo,/about.html,page missing title and h1,E5,4,5,1,open site-export/about.html and inspect head and headings,add unique title and h1
+F-04,seo,/index.html,no meta description,E1,3,5,1,open site-export/index.html and inspect head,write a unique meta description
+F-05,conversion,/order.html,no confirmation or error state after submit,E3,5,3,3,review site-export/order.html form markup,add success and error states to order flow
+F-06,analytics,/,no analytics instrumentation on any page,E1,3,4,2,grep site-export for analytics snippets,install consented analytics and events for the order funnel

@@ -1,0 +1,11 @@
+{
+  "run_id": "synthetic-sample",
+  "skill_version": "0.1.0",
+  "phase": "tickets",
+  "status": "completed",
+  "completed_phases": ["scope", "evidence", "analysis", "findings", "priorities", "tickets"],
+  "approved_artifacts": ["findings.csv", "prioritized-backlog.csv"],
+  "pending_questions": [],
+  "assumptions": ["contact.html noindex assumed deliberate, undocumented"],
+  "timestamps": {"started": "2026-10-10T00:00:00Z", "finished": "2026-10-10T00:15:00Z"}
+}

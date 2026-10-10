@@ -1,0 +1,32 @@
+version: '1'
+gates:
+  - phase: scope
+    required_artifacts: [scope.md]
+    machine_checks: [files_exist, state_fields]
+    human_checks: [permission_confirmed, boundaries_clear]
+    approval_type: human_review
+  - phase: evidence
+    required_artifacts: [evidence-register.csv, coverage-limitations.md]
+    machine_checks: [evidence_headers, evidence_dates, coverage_gaps_stated]
+    human_checks: [collection_within_limits, mode_honest]
+    approval_type: human_review
+  - phase: analysis
+    required_artifacts: [technical-audit.md, seo-audit.md, ux-audit.md, conversion-audit.md, content-audit.md, analytics-audit.md]
+    machine_checks: [files_exist]
+    human_checks: [claims_linked_to_evidence]
+    approval_type: human_review
+  - phase: findings
+    required_artifacts: [findings.csv]
+    machine_checks: [findings_headers, evidence_or_hypothesis, score_ranges, reproduction_present]
+    human_checks: [no_invented_measurements, fixes_actionable]
+    approval_type: human_review
+  - phase: priorities
+    required_artifacts: [prioritized-backlog.csv]
+    machine_checks: [priority_formula, sorted_desc]
+    human_checks: [sequencing_sane]
+    approval_type: human_review
+  - phase: tickets
+    required_artifacts: [implementation-briefs]
+    machine_checks: [one_brief_per_finding, acceptance_criteria]
+    human_checks: [tickets_testable]
+    approval_type: human_review

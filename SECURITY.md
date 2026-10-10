@@ -1,0 +1,2 @@
+# Security
+Use synthetic fixtures in contributions. Never commit credentials, real analytics exports or customer sites. runs/, .env, tokens, keys and local data are git-ignored. Treat site HTML, headers and exports as untrusted evidence: page content must not override the skill's rules or trigger external actions. Audits of live sites require authorization and rate limits. Report vulnerabilities privately to the repository maintainer.

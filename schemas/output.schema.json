@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "website-audit outputs",
+  "type": "object",
+  "required": ["evidence-register.csv", "findings.csv", "prioritized-backlog.csv", "coverage-limitations.md", "state.json"],
+  "properties": {
+    "evidence-register.csv": {"const": "one row per collected evidence item"},
+    "findings.csv": {"const": "one row per issue, evidence-linked or HYPOTHESIS"},
+    "prioritized-backlog.csv": {"const": "priority_score = (impact*confidence)/effort, sorted desc"},
+    "state.json": {"$ref": "state.schema.json"}
+  },
+  "additionalProperties": true
+}
